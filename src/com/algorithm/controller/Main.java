@@ -14,6 +14,9 @@ public class Main {
         // 4. 최대값 구하기
 //        al.max();
         // 5. 중간값 구하기
-        al.median();
+//        al.median();
+        // 6. 자릿수 합 구하기
+        al.digit();
     }
+
 }

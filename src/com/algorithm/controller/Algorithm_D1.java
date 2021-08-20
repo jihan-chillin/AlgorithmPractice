@@ -115,4 +115,24 @@ public class Algorithm_D1 {
         System.out.println("중간값 : "+median);
     }
 
+    // 6. 자릿수의 합
+    // 자연수 N은 1부터 9999까지의 자연수이다.
+    // 각 자릿수의 합을 출력하기
+    public void digit(){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        // key point
+        // 1. 10으로 나누었을 때, 나머지값
+        // 2. 10으로 나누얼 때, 자연수 부분
+
+        int sum = 0 ;
+        while(N>0){
+            sum += N%10;
+            N /= 10;
+        }
+
+        System.out.println(sum);
+
+    }
 }
