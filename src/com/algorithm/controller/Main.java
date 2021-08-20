@@ -10,6 +10,8 @@ public class Main {
         // 2. 평균값 구하기
 //        al.Average();
         // 3. 큰 놈, 작은 놈, 같은 놈
-        al.compare();
+//        al.compare();
+        // 4. 최대값 구하기
+        al.max();
     }
 }

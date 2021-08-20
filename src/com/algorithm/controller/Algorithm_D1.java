@@ -65,4 +65,21 @@ public class Algorithm_D1 {
         }
     }
 
+    // [ 4. 최대수 구하기 ]
+    public void max(){
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+
+        for(int i = 1; i<=T ; i++){
+            int max = 0; // 푀대값
+            for(int j = 1 ; j<=10 ; j++ ){
+                int num = sc.nextInt();
+                if(num>max){
+                    max = num;
+                }
+            }
+            System.out.println("#"+i+" "+max);
+        }
+    }
+
 }
