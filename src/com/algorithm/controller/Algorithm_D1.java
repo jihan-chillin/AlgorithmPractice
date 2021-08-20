@@ -82,4 +82,37 @@ public class Algorithm_D1 {
         }
     }
 
+    // [ 5. 중간값 찾기 ]
+    // N개의 점수가 주어졌을 때 중간값을 출력
+    // N은 항상 홀수
+    // N은 9이상 199 이하의 정수
+    public void median(){
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+
+        int[] arr = new int[N];
+
+        // 1. N개 만큼 점수 입력받기
+        for(int i = 0; i < N ; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        // 2. 오름 차순 정렬
+        int swap ; // 위치변경을 위한 변수
+
+        for(int j = 0; j < N ; j++){
+            for(int k=j+1; k<N ; k++){
+                if(arr[j]>arr[k]){
+                    swap = arr[j];
+                    arr[j] = arr[k];
+                    arr[k] = swap;
+                }
+            }
+        }
+
+        // 3. 중간값 출력
+        int median = arr[(N+1)/2 - 1];
+        System.out.println("중간값 : "+median);
+    }
+
 }

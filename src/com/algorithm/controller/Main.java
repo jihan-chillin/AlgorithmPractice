@@ -12,6 +12,8 @@ public class Main {
         // 3. 큰 놈, 작은 놈, 같은 놈
 //        al.compare();
         // 4. 최대값 구하기
-        al.max();
+//        al.max();
+        // 5. 중간값 구하기
+        al.median();
     }
 }
