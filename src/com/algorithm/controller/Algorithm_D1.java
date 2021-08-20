@@ -46,4 +46,23 @@ public class Algorithm_D1 {
         }
     }
 
+    // [ 3. 큰놈, 작은 놈, 같은 놈 ]
+    public void compare(){
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt(); // 테스트 케이스 개수
+
+        for(int i=1; i<=T; i++){
+            int num = sc.nextInt();
+            int num2 = sc.nextInt();
+
+            if(num>num2){
+                System.out.println("#"+i+" "+">");
+            }
+            else if(num<num2){
+                System.out.println("#"+i+" "+"<");
+            }
+            else System.out.println("#"+i+" "+"=");
+        }
+    }
+
 }
