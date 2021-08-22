@@ -135,4 +135,32 @@ public class Algorithm_D1 {
         System.out.println(sum);
 
     }
-}
+
+    // 7. [ 연, 월, 일 출력하기 ] -> 윤년 고려 X
+    // 8자리의 날짜를 입력받는다.
+    // YYYY/MM/DD 형식으로 출력하고,
+    // 날짜가 유효하지 않을 경우 -1 출력
+    // ( 월은 1 ~ 12 / 일은 1 ~ 각각의 달에 해당하는 날짜까지의 값 )
+    public void EightLettersOfDate(){
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt();
+
+        int[] days = {31,28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+        for(int i = 1 ; i <= T; i++){
+            String date = sc.next();
+            int year = Integer.parseInt(date.substring(0,4));
+            int month = Integer.parseInt(date.substring(4,6));
+            int day = Integer.parseInt(date.substring(6,8));
+
+            // 유효성 검사
+            if(month >=1 && month<=12 && day<=days[month-1]){
+                System.out.printf("#%04d/%02d/%02d",year, month, day);
+            }
+            else{
+                System.out.println("#"+i+" -1");
+            }
+
+            }
+        }
+    }

@@ -16,7 +16,9 @@ public class Main {
         // 5. 중간값 구하기
 //        al.median();
         // 6. 자릿수 합 구하기
-        al.digit();
+//        al.digit();
+        // 7. 연, 일, 월
+        al.EightLettersOfDate();
     }
 
 }
