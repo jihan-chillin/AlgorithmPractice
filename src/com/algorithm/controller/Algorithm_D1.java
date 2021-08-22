@@ -163,4 +163,26 @@ public class Algorithm_D1 {
 
             }
         }
+
+        // 8. 알파벳을 숫자로 변환
+        // 입력받은 알파벳을 숫자로 변환하여 빈 칸을 두고 출력한다.
+        // 대문자만 들어온다고 가정하면 될 듯.
+    public void AlphaToNum(){
+        Scanner sc = new Scanner(System.in);
+        int[] convert = new int[26];
+        int num ;
+
+        for(int i = 0 ; i<26 ; i ++){
+            String alpha = sc.next();
+            num = alpha.charAt(0)-64;
+            convert[i] = num;
+        }
+
+        for (int j=0 ; j<convert.length ; j++){
+            System.out.print(convert[j]+" ");
+        }
+
     }
+
+    }
+

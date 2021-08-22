@@ -18,7 +18,9 @@ public class Main {
         // 6. 자릿수 합 구하기
 //        al.digit();
         // 7. 연, 일, 월
-        al.EightLettersOfDate();
+//        al.EightLettersOfDate();
+        // 8. 알파벳 숫자로 변환
+        al.AlphaToNum();
     }
 
 }
