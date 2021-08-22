@@ -1,5 +1,6 @@
 package com.algorithm.controller;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Algorithm_D1 {
@@ -184,5 +185,15 @@ public class Algorithm_D1 {
 
     }
 
+    // 9. 신문 헤드라인
+    // 소문자를 대문자로 모두 바꿔라
+    public void SmallToCapital(){
+        Scanner sc = new Scanner(System.in);
+        String headline = sc.nextLine();
+
+        System.out.print(headline.toUpperCase());
+
     }
+
+   }
 

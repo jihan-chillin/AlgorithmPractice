@@ -20,7 +20,9 @@ public class Main {
         // 7. 연, 일, 월
 //        al.EightLettersOfDate();
         // 8. 알파벳 숫자로 변환
-        al.AlphaToNum();
+//        al.AlphaToNum();
+        // 9. 신문 헤드라인
+        al.SmallToCapital();
     }
 
 }
