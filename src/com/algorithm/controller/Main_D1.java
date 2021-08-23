@@ -1,6 +1,6 @@
 package com.algorithm.controller;
 
-public class Main {
+public class Main_D1 {
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class Main {
         // 8. 알파벳 숫자로 변환
 //        al.AlphaToNum();
         // 9. 신문 헤드라인
-        al.SmallToCapital();
+//        al.SmallToCapital();
     }
 
 }
