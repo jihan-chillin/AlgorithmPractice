@@ -3,6 +3,7 @@ package com.algorithm.controller;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
 import java.util.Scanner;
 
 public class Algorithm_D2 {
@@ -43,4 +44,47 @@ public class Algorithm_D2 {
         }
 
     }
+
+    // 2. 수도요금 경쟁
+    // A 수도 회사 : 1L당 P원
+    // B 수도 회사 : R리터 이하 Q원 -> 그 이상 부턴 1L당 S원
+    // 종민이가 한 달간 사용하는 수도양 : W
+    // 수도회사 중 더 저렴한 회사를 골라 요금을 출력하라
+
+    public void swea1284(){
+        Scanner sc = new Scanner(System.in);
+        int T = sc.nextInt(); // 테스트 케이스
+        String[] caseArr = new String[5];
+
+        for(int i = 1 ; i<=T ; i ++) {
+
+            int P = sc.nextInt();
+            int Q = sc.nextInt();
+            int R = sc.nextInt();
+            int S = sc.nextInt();
+            int W = sc.nextInt();
+
+            int chargeA = W * P; // A회사의 수도요금
+            int chargeB; // B회사의 수도 요금
+
+            int finalCharge;
+
+            if (W <= R) {
+                chargeB = Q;
+            } else {
+                chargeB = Q + (W - R) * S;
+            }
+
+            if (chargeA < chargeB) {
+                finalCharge = chargeA;
+            } else {
+                finalCharge = chargeB;
+            }
+
+            System.out.println("#" + i + " " + finalCharge);
+
+        }
+    }
+
+
 }
