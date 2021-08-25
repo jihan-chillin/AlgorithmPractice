@@ -86,5 +86,46 @@ public class Algorithm_D2 {
         }
     }
 
+    // 3. 아름이의 돌 던지기
+    // 밀리미터 단위로 -100,000에서 100,000까지의 숫자가 일렬로 써져 있을 때
+    // 100000이 써져 있는 위치에서 돌을 던진다.
+    // 가장 0에 가깝게 돌이 떨어진 위치와 0 사이의 거리차이, 몇 명이 가장 가까이에 던졌는지
+    // 이 두 가지 값을 구하라.
+
+    public void swea1285(){
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        try{
+            // 테스트 케이스
+            int T = Integer.parseInt(br.readLine());
+            for(int i = 1 ; i<=T ; i++){
+
+                int count = 0;
+                int min = 100000; // 돌을 최대로 던졌을 때의 경우
+                int people = Integer.parseInt(br.readLine());
+
+
+                String[] distances = br.readLine().split(" ");
+
+                for(String s : distances){
+                    int num = Math.abs(Integer.parseInt(s));
+                    if(min>num){
+                        min = num;
+                        count = 1;
+                    }
+                    else if ( min == num){
+                        count++;
+                    }
+                }
+
+                System.out.println("#"+i+" "+min+" "+count);
+                }
+
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
 
 }

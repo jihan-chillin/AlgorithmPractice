@@ -8,6 +8,10 @@ public class Main_D2 {
 //        al.mode();
 
         // 2. 수도 요굼 경재
-        al.swea1284();
+//        al.swea1284();
+
+        // 3. 아름이의 돌 던지기
+        al.swea1285();
     }
+
 }
